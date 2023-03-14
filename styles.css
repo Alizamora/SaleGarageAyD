@@ -37,17 +37,16 @@ h2 {
     color: var(--primary-color);
     font-family: "Tan-pearl";
     font-size: 35px;
-    letter-spacing: 5%;
     text-align: center;
 }
 
 h3 {
     color: var(--white-color);
+    filter: drop-shadow(2px 4px 6px black);
     font-family: "Tan-pearl";
     font-size: 25px;
-    letter-spacing: 10%;
+    letter-spacing: 10px;
     text-align: center;
-    filter: drop-shadow(2px 4px 6px black);
 }
 
 h4 {
@@ -55,20 +54,43 @@ h4 {
     font-family: 'Roboto';
     font-size: 20px;
     font-weight: 600;
+    letter-spacing: 10px;
+    margin: 0;
     text-align: center;
-} 
-
-header {
-
+    text-transform: uppercase;
+    padding: 25px;
 }
 
-footer {
+h4 a {
+    color: var(--white-color);
+}
 
+nav {
+    background-color: var(--primary-color);
+    opacity: 0.8;
+    padding: 20px;
 }
 
 ul {
     list-style: none;
     padding: 0;
+}
+
+ul.menu {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 0;
+}
+
+ul.menu li {
+    padding-bottom: 15px;
+}
+
+ul.menu a {
+    color: var(--white-color);
+    letter-spacing: 5px;
 }
 
 .info-container ul {
@@ -85,6 +107,7 @@ ul {
     margin-bottom: 10px;
     filter: drop-shadow(2px 4px 6px black);
     margin-left: 10px;
+    letter-spacing: 5px;
 }
 
 
