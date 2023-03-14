@@ -1,0 +1,113 @@
+:root {
+    --primary-color: #6B5649;
+    --secondary-color: #735C4E;
+    --white-color: #fff;
+    --black-color: #000;
+}
+
+@font-face {
+    font-family: "Tan-pearl";
+    src: url(Fonts/TAN-PEARL.ttf);
+}
+
+@font-face {
+    font-family: 'roboto';
+    src: url(Fonts/Roboto-Regular.ttf)
+}
+
+@font-face {
+    font-family: 'roboto-light';
+    src: url(Fonts/Roboto-Light.ttf)
+}
+
+body {
+    margin: 0;
+}
+
+h1 {
+    color: var(--primary-color);
+    font-family: "Tan-pearl";
+    font-size: 50px;
+    margin: 0;
+    padding: 20px 0 20px;
+    text-align: center;
+}
+
+h2 {
+    color: var(--primary-color);
+    font-family: "Tan-pearl";
+    font-size: 35px;
+    letter-spacing: 5%;
+    text-align: center;
+}
+
+h3 {
+    color: var(--white-color);
+    font-family: "Tan-pearl";
+    font-size: 25px;
+    letter-spacing: 10%;
+    text-align: center;
+    filter: drop-shadow(2px 4px 6px black);
+}
+
+h4 {
+    color: var(--white-color);
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+} 
+
+header {
+
+}
+
+footer {
+
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.info-container ul {
+    list-style: inherit;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.363);
+    border-radius: 5px;
+}
+
+.info-container li {
+    font-family: 'roboto-light';
+    color: var(--white-color);
+    font-size: 16px;
+    margin-bottom: 10px;
+    filter: drop-shadow(2px 4px 6px black);
+    margin-left: 10px;
+}
+
+
+/*Media mobile*/
+@media (max-width: 430px) {
+    .hidden-xs {
+        display: none;
+    }
+
+    .info-container {
+        background-image: url(/imgs/bg/bg-mob.png);
+        padding: 50px 20px;
+        //filter: drop-shadow(2px 4px 6px black);
+    }
+}
+
+/*Media desktop*/
+@media (min-width: 430px) {
+    .hidden-lg {
+        display: none;
+    }
+
+    .info-container {
+        background-image: url(/imgs/bg/bg-desktop.png);
+    }
+}
