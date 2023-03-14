@@ -24,8 +24,26 @@ body {
     margin: 0;
 }
 
+.contact-info {
+    background-color: var(--black-color);
+    padding: 20px 15px;
+    text-align: center;
+}
+
+.contact-info p {
+    color: var(--white-color);
+    font-family: 'roboto';
+}
+
 .divider-price {
     background-color: rgba(115, 92, 078, 0.2);
+}
+
+.first-divider .divider-price_container,
+.last-divider .divider-price_container {
+    justify-content: center;
+    position: relative;
+    display: flex;
 }
 
 .divider-price_container {
@@ -61,7 +79,6 @@ h2 {
 
 h3 {
     color: var(--white-color);
-    filter: drop-shadow(2px 4px 6px black);
     font-family: "Tan-pearl";
     font-size: 25px;
     letter-spacing: 8px;
@@ -114,9 +131,6 @@ ul.menu a {
 
 .info-container ul {
     list-style: inherit;
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.363);
-    border-radius: 5px;
 }
 
 .info-container li {
@@ -124,14 +138,24 @@ ul.menu a {
     color: var(--white-color);
     font-size: 16px;
     margin-bottom: 10px;
-    filter: drop-shadow(2px 4px 6px black);
     margin-left: 10px;
     letter-spacing: 3px;
 }
 
+.info-container-bg {
+    background-color: rgba(107, 86, 73, 0.8);
+    border-radius: 5px;
+    padding: 20px;
+    max-width: 1068px;
+    margin: 0 auto;
+}
 
 /*Media mobile*/
 @media (max-width: 430px) {
+    h3 {
+        letter-spacing: 1px;
+    }
+
     .hidden-xs {
         display: none;
     }
@@ -145,6 +169,26 @@ ul.menu a {
     .divider-price {
         padding: 35px 0;
     }
+
+    .first-divider .divider-price_container .right-link {
+        bottom: 0;
+        position: absolute;
+        right: 40%;
+    }
+
+    .last-divider .divider-price_container .left-link {
+        position: absolute;
+        right: 40%;
+        top: 0;
+    }
+
+    .contact-info .designer {
+        font-size: 15px;
+    }
+    
+    .contact-info .email {
+        font-size: 12px;
+    }
 }
 
 /*Media desktop*/
@@ -155,5 +199,52 @@ ul.menu a {
 
     .info-container {
         background-image: url('imgs/bg/bg-desktop.png');
+        height: 283px;
+        padding: 30px 0;
+    }
+
+    .info-containe ul {
+        list-style: none;
+        margin: 0 auto;
+        max-width: 854px;
+        text-align: center;
+    }
+
+    ul.menu {
+        flex-direction: row;
+        gap: 35px;
+        padding: 0;
+    }
+
+    ul.menu li {
+        padding: 0;
+    }
+
+    .divider-price_container {
+        align-items: center;
+        flex-direction: row;
+        height: 71px;
+        max-width: 956px;
+        margin: 0 auto;
+    }
+
+    .first-divider .divider-price_container .right-link {
+        bottom: 40%;
+        position: absolute;
+        right: 0;
+    }
+
+    .last-divider .divider-price_container .left-link {
+        position: absolute;
+        left: 0;
+        top: 40%;
+    }
+
+    .contact-info .designer {
+        font-size: 20px;
+    }
+    
+    .contact-info .email {
+        font-size: 15px;
     }
 }
