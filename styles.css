@@ -24,6 +24,25 @@ body {
     margin: 0;
 }
 
+.divider-price {
+    background-color: rgba(115, 92, 078, 0.2);
+}
+
+.divider-price_container {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.divider-price_container a {
+    color: var(--secondary-color);
+    font-family: 'roboto-light';
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
 h1 {
     color: var(--primary-color);
     font-family: "Tan-pearl";
@@ -45,7 +64,7 @@ h3 {
     filter: drop-shadow(2px 4px 6px black);
     font-family: "Tan-pearl";
     font-size: 25px;
-    letter-spacing: 10px;
+    letter-spacing: 8px;
     text-align: center;
 }
 
@@ -107,7 +126,7 @@ ul.menu a {
     margin-bottom: 10px;
     filter: drop-shadow(2px 4px 6px black);
     margin-left: 10px;
-    letter-spacing: 5px;
+    letter-spacing: 3px;
 }
 
 
@@ -121,6 +140,10 @@ ul.menu a {
         background-image: url('imgs/bg/bg-mob.png');
         padding: 50px 20px;
         filter: drop-shadow(2px 4px 6px black);
+    }
+
+    .divider-price {
+        padding: 35px 0;
     }
 }
 
