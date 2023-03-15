@@ -129,6 +129,20 @@ ul.menu a {
     letter-spacing: 5px;
 }
 
+img {
+    width: 100%;
+}
+
+.imgs_wrapper,
+.imgs_wrapper-2col,
+.imgs_wrapper-3col {
+    margin: 0;
+}
+
+.imgs_wrapper li {
+    margin: 0 auto;
+}
+
 .info-container ul {
     list-style: inherit;
 }
