@@ -226,8 +226,9 @@ img {
     .imgs_wrapper-2col,
     .imgs_wrapper-3col {
         display: flex;
-        justify-content: center;
         gap: 5px;
+        justify-content: center;
+        margin-bottom: 5px;
     }
 
     .imgs_wrapper-2col li,
