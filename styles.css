@@ -139,8 +139,11 @@ img {
     margin: 0;
 }
 
-.imgs_wrapper li {
+.imgs_wrapper li,
+.imgs_wrapper-2col li,
+.imgs_wrapper-3col li {
     margin: 0 auto;
+    display: inline;
 }
 
 .info-container ul {
@@ -209,6 +212,27 @@ img {
 @media (min-width: 430px) {
     .hidden-lg {
         display: none;
+    }
+
+    img {
+        max-width: 236px;
+    }
+
+    .gallery {
+        margin: 25px auto;
+        max-width: 956px;
+    }
+
+    .imgs_wrapper-2col,
+    .imgs_wrapper-3col {
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    .imgs_wrapper-2col li,
+    .imgs_wrapper-3col li {
+        margin: 0;
     }
 
     .info-container {
